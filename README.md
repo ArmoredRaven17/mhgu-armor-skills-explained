@@ -1,10 +1,10 @@
-# MHGU Skill Ledger
+# MHGU Armor Skills Explained
 
-Every armour skill in **Monster Hunter Generations Ultimate**: the game's own description, then a detailed
+Every armor skill in **Monster Hunter Generations Ultimate**: the game's own description, then a detailed
 explanation of what the skill actually does — the exact amounts, what counts and what doesn't, the limits per
 weapon, how it stacks with other skills (Felyne skills, Deviant souls), and what isn't confirmed yet.
 
-Live: https://armoredraven17.github.io/mhgu-skill-ledger/
+Live: https://armoredraven17.github.io/mhgu-armor-skills-explained/
 
 The in-game descriptions say *what* a skill touches. This page says *how*: for example, Artillery Expert is
 x1.2 on Gunlance shells and x1.35 on Charge Blade phials, Felyne Bombardier multiplies on top, and the total is

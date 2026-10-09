@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="assets/icons/icon_talisman.png">
-<title>MHGU Skill Ledger</title>
+<title>MHGU Armor Skills Explained</title>
 <style>
 /* The look of the sibling MHGU apps (Set Builder, Collection Tracker...): the MHFU game font, a grey title
    bar over the titlebar texture, dark rocky panels, thin translucent lines. One dark look by design. */
@@ -135,7 +135,7 @@ ul.unk { margin: 0; padding-left: 20px; opacity: .75; line-height: 1.5; max-widt
 <div id="app">
   <header class="titlebar">
     <img class="title-icon" src="assets/icons/icon_talisman.png" alt="">
-    <h1>MHGU Skill Ledger</h1>
+    <h1>MHGU Armor Skills Explained</h1>
     <span class="titlebar-spacer"></span>
     <a id="howBtn" class="btn tiny" href="#">How skills activate</a>
     <button id="linksBtn" class="icon-btn" title="Other MHGU apps" aria-label="Other MHGU apps">&#128279;</button>
@@ -215,7 +215,7 @@ ul.unk { margin: 0; padding-left: 20px; opacity: .75; line-height: 1.5; max-widt
         <span class="app-desc">Renders every monster in 3D with its own motion lists, so you can watch what they actually do.</span>
       </li>
       <li class="current">
-        <span class="app-name">Skill Ledger <span class="app-here">you are here</span></span>
+        <span class="app-name">Armor Skills Explained <span class="app-here">you are here</span></span>
         <span class="app-desc">Every armor skill: the game's own description, then what it actually does, with the numbers.</span>
       </li>
     </ul>
@@ -228,7 +228,7 @@ ul.unk { margin: 0; padding-left: 20px; opacity: .75; line-height: 1.5; max-widt
 <div id="aboutModal" class="modal" hidden>
   <div class="modal-card">
     <h2>About</h2>
-    <p>An unofficial, non-commercial fan reference for MHGU's armour skills. Each skill shows the game's own description, then a detailed explanation: the exact amounts, what counts, the limits per weapon and how it stacks with other skills.</p>
+    <p>An unofficial, non-commercial fan reference for MHGU's armor skills. Each skill shows the game's own description, then a detailed explanation: the exact amounts, what counts, the limits per weapon and how it stacks with other skills.</p>
     <p><strong>Where the numbers come from:</strong> read from the game's own code and data, not from guides. Where something isn't confirmed yet, the skill says so.</p>
     <p><strong>Development:</strong> Built by the author with substantial help from <a href="https://claude.com/claude-code" target="_blank" rel="noopener">Claude Code</a>, Anthropic's AI coding tool, reviewed and directed by the author.</p>
     <p><strong>Menu textures and font:</strong> carried over from the sibling MHGU apps.</p>
@@ -340,7 +340,7 @@ function show(id) {
   if (!s) {
     state.cur = null;
     main.innerHTML = `<article class="card"><div class="card-head"><img class="title-icon" src="assets/icons/icon_talisman.png" alt=""><h2 class="skill">How skills activate</h2></div><div class="res-title">Points, trees and the skill limit</div><div class="md">${md(DATA.overview)}</div></article>${FOOT}`;
-    document.title = 'MHGU Skill Ledger';
+    document.title = 'MHGU Armor Skills Explained';
     list(); main.scrollTop = 0; return;
   }
   state.cur = id;
@@ -356,7 +356,7 @@ function show(id) {
     ${(p.notConfirmed && p.notConfirmed.length) ? `<div class="res-title">Not confirmed yet</div><ul class="unk">${p.notConfirmed.map(o => `<li>${inline(o)}</li>`).join('')}</ul>` : ''}
     ${s.trees.length ? `<div class="res-title">Where it sits</div>${ladder(s)}` : ''}
   </article>${FOOT}`;
-  document.title = s.name + ' · MHGU Skill Ledger';
+  document.title = s.name + ' · MHGU Armor Skills Explained';
   list(); main.scrollTop = 0;
 }
 
