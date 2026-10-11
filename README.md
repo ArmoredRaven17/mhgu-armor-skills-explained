@@ -2,7 +2,12 @@
 
 Every armor skill in **Monster Hunter Generations Ultimate**: the game's own description, then a detailed
 explanation of what the skill actually does — the exact amounts, what counts and what doesn't, the limits per
-weapon, how it stacks with other skills (Felyne skills, Deviant souls), and what isn't confirmed yet.
+weapon, and how it stacks with other skills (Felyne skills, Deviant souls).
+
+The **Food Skills** tab does the same for the 65 Felyne skills you get from Hunter Kitchen meals: what each one
+does, how it combines with the matching armor skill, and which dishes can give it: pick a dish to see its sauces
+and the odds (normally, with the chef Fired Up, and with a Gourmet Voucher), plus where the dish sits in the
+in-game Select Dish list.
 
 Live: https://armoredraven17.github.io/mhgu-armor-skills-explained/
 
@@ -14,8 +19,8 @@ the other.
 ## Where the numbers come from
 
 The numbers were read from the game's own code and data (a personally-owned copy), not taken from guides.
-Community figures were only used as a check. Where something could not be confirmed, the skill says so under
-"Not confirmed yet".
+Community figures were only used as a check. Each food skill's dishes, sauces and odds are generated straight
+from the game's kitchen tables.
 
 ## How it fits the family
 
